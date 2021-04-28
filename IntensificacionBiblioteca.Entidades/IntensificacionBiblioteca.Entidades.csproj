@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E97C7D3-E238-40F3-83F0-1D44E2361D68}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntensificacionBiblioteca.Entidades</RootNamespace>
+    <AssemblyName>IntensificacionBiblioteca.Entidades</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTOs\AutorLibro\AutorLibroListDto.cs" />
+    <Compile Include="DTOs\CarritoDto.cs" />
+    <Compile Include="DTOs\DetallePrestamo\DetallePrestamoEditDto.cs" />
+    <Compile Include="DTOs\DetallePrestamo\DetallePrestamoListDto.cs" />
+    <Compile Include="DTOs\Editorial\EditorialEditDto.cs" />
+    <Compile Include="DTOs\Editorial\EditorialListDto.cs" />
+    <Compile Include="DTOs\Estado\EstadoEditDto.cs" />
+    <Compile Include="DTOs\Estado\EstadoListDto.cs" />
+    <Compile Include="DTOs\Genero\GeneroEditDto.cs" />
+    <Compile Include="DTOs\Genero\GeneroListDto.cs" />
+    <Compile Include="DTOs\Libro\LibroEditDto.cs" />
+    <Compile Include="DTOs\Libro\LibroListDto.cs" />
+    <Compile Include="DTOs\Localidad\LocalidadEditDto.cs" />
+    <Compile Include="DTOs\Localidad\LocalidadListDto.cs" />
+    <Compile Include="DTOs\Pais\PaisEditDto.cs" />
+    <Compile Include="DTOs\Pais\PaisListDto.cs" />
+    <Compile Include="DTOs\Prestamo\PrestamoEditDto.cs" />
+    <Compile Include="DTOs\Prestamo\PrestamoListDto.cs" />
+    <Compile Include="DTOs\Provincia\ProvinciaListDto.cs" />
+    <Compile Include="DTOs\Socio\SocioEditDto.cs" />
+    <Compile Include="DTOs\Socio\SocioListDto.cs" />
+    <Compile Include="DTOs\SubGenero\SubGeneroEditDto.cs" />
+    <Compile Include="DTOs\SubGenero\SubGeneroListDto.cs" />
+    <Compile Include="DTOs\TipoDeDoc\TipoDeDocListDto.cs" />
+    <Compile Include="Entidades\Autor.cs" />
+    <Compile Include="Entidades\AutorLibro.cs" />
+    <Compile Include="Entidades\DetallePrestamo.cs" />
+    <Compile Include="Entidades\Editorial.cs" />
+    <Compile Include="Entidades\Estado.cs" />
+    <Compile Include="Entidades\Genero.cs" />
+    <Compile Include="Entidades\Libro.cs" />
+    <Compile Include="Entidades\Localidad.cs" />
+    <Compile Include="Entidades\Pais.cs" />
+    <Compile Include="Entidades\Prestamo.cs" />
+    <Compile Include="Entidades\Provincia.cs" />
+    <Compile Include="Entidades\Socio.cs" />
+    <Compile Include="Entidades\SubGenero.cs" />
+    <Compile Include="Entidades\TipoDeDocumento.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
